@@ -85,6 +85,11 @@
         "description": "Protect contents from getting forwarded",
         "value": "False",
         "required": false
+      },
+      "SECONDS": {
+        "description": "auto delete in seconds",
+        "value": "600",
+        "required": false
       }
   },
   "buildpacks": [
