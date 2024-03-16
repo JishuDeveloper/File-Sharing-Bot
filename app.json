@@ -1,0 +1,95 @@
+{
+  "name": "File Sharing Premium Bot",
+  "description": "Telegram File Sharing Premium Bot Bot ",
+  "logo": "https://graph.org/file/2f461540c83b362772714.jpg",
+  "keywords": ["File Sharing Premium Bot", "Mongo DB"],    
+  "repository": "https://github.com/JishuDeveloper/File-Sharing-Premium-Bot",
+  "success_url": "https://t.me/Madflix_Bots",
+  "env": {
+      "APP_ID": {
+          "description": "Your APP ID From my.telegram.org ",
+          "value": "",
+          "required": true
+      },
+      "API_HASH": {
+          "description": "Your API Hash From my.telegram.org ",
+          "value": "",
+          "required": true
+      },
+      "TG_BOT_TOKEN": {
+          "description": "Your Bot Token From @BotFather",
+          "value": "",
+          "required": true
+      },
+      "OWNER": {
+          "description":"Add Your username here",
+          "value": "",
+          "required": true
+      },
+      "OWNER_ID": {
+        "description":"Add Your User ID here",
+        "value": "",
+        "required": true
+      },
+      "CHANNEL_ID": {
+          "description":"Make a channel (database channel), then make the bot as admin in channel, and it's id",
+          "value": "",
+          "required": true          
+      },
+      "FORCE_SUB_CHANNEL": {
+        "description": "id of the channel or group, if you want enable force sub feature else put 0",
+        "value": "",
+        "required": false
+      },
+      "FORCE_SUB_CHANNEL2": {
+        "description": "id of the channel or group, if you want enable force sub feature else put 0",
+        "value": "",
+        "required": false
+      },
+      "FORCE_SUB_CHANNEL3": {
+        "description": "id of the channel or group, if you want enable force sub feature else put 0",
+        "value": "",
+        "required": false
+      },
+      "FORCE_SUB_CHANNEL4": {
+        "description": "id of the channel or group, if you want enable force sub feature else put 0",
+        "value": "",
+        "required": false
+      },
+      "DB_URL": {
+          "description": "Your Mongo DB Database URL",
+          "value": "",
+          "required": true
+      },
+      "DB_NAME":{ 
+          "description":"Your Mongo DB Database Name",
+          "value": "madflixbotz",
+          "required": false
+      },
+      "START_MESSAGE": {
+        "description": "Optional: start message of bot, use HTML parsemode format",
+        "value": "Hello {mention}\n\nI Can Store Private Files In Specified Channel And Other Users Can Access It From Special Link.",
+        "required": false
+      },
+      "FORCE_SUB_MESSAGE": {
+        "description": "Optional: Force Sub message of bot, use HTML parsemode format",
+        "value": "Hello {mention}\n\n<b>You Need To Join In My Channel To Use Me\n\nKindly Please Join Channel</b>",
+        "required": false
+      },
+      "ADMINS": {
+        "description": "A space separated list of user_ids of Admins, they can only create links",
+        "value": "",
+        "required": false
+      },
+      "PROTECT_CONTENT": {
+        "description": "Protect contents from getting forwarded",
+        "value": "False",
+        "required": false
+      }
+  },
+  "buildpacks": [
+      {
+          "url": "heroku/python"
+      }
+  ]
+}
