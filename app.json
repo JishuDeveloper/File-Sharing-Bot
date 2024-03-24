@@ -56,6 +56,16 @@
         "value": "",
         "required": false
       },
+    "FORCE_SUB_CHANNEL6": {
+        "description": "id of the channel or group, if you want enable force sub feature else put 0",
+        "value": "",
+        "required": false
+      },
+    "FORCE_SUB_CHANNEL5": {
+        "description": "id of the channel or group, if you want enable force sub feature else put 0",
+        "value": "",
+        "required": false
+      },
       "DB_URL": {
           "description": "Your Mongo DB Database URL",
           "value": "",
