@@ -55,6 +55,11 @@
 
 ### FEATURES
 - Fully customisable.
+- Auto Delete Added.
+- 3 Branch Available.
+- main Branch Means 1 force subs.
+- 2-force-subs Means 2 force subs.
+- 4-force-subs Means 4 force subs.
 - Customisable welcome & Forcesub messages.
 - More than one Posts in One Link.
 - Can be deployed on heroku directly.
