@@ -93,10 +93,10 @@ async def start_command(client: Client, message: Message):
 
             except:
                 pass
-        k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>IMPORTANT</u> ❗️</b>\n\nThis video / file will be deleted in 10 minutes (Due to copyright issues).\n\n📌 Please forward this video / file to somewhere else and start downloading there.")
+        k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>IMPORTANT</u> ❗️</b>\n\nBefore downloading the files, make sure to forward them to saved messages or somewhere else.\n\n📌 Because after 10 minutes, it will be automatically deleted (Due to copyright issues).")
         await asyncio.sleep(SECONDS)
         await f.delete()
-        await k.edit_text("Your video / file is successfully deleted !")
+        await k.edit_text("Your files were successfully deleted !")
 
 
         return
@@ -138,8 +138,8 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
-            InlineKeyboardButton(text="Join Channel", url=client.invitelink),
-            InlineKeyboardButton(text="Join Channel", url=client.invitelink2),
+            InlineKeyboardButton(text="Join Channel 1", url=client.invitelink),
+            InlineKeyboardButton(text="Join Channel 2", url=client.invitelink2),
         ]
     ]
     try:
