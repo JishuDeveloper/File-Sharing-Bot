@@ -58,12 +58,12 @@
       },
       "START_MESSAGE": {
         "description": "Optional: start message of bot, use HTML parsemode format",
-        "value": "Hello {mention}\n\nI Can Store Private Files In Specified Channel And Other Users Can Access It From Special Link.",
+        "value": "<b>ʜᴇʟʟᴏ {first}\n\nɪ ᴀᴍ ᴀ ꜰɪʟᴇ ꜱᴛᴏʀᴇʀ ʙᴏᴛ ᴏꜰ ɪᴀꜱ ᴍᴏᴠɪᴇꜱ & ꜱᴇʀɪᴇꜱ, ɪ ꜱᴛᴏʀᴇ ꜰɪʟᴇꜱ ɪɴꜱɪᴅᴇ ᴍᴇ ᴀɴᴅ ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ ᴛʜᴇᴍ ʙʏ ꜱᴏʟᴠɪɴɢ ꜱʜᴏʀᴛᴇɴᴇʀ ꜰʀᴏᴍ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ!\n» @IAS_MOVIESANDSERIES</b>",
         "required": false
       },
       "FORCE_SUB_MESSAGE": {
         "description": "Optional: Force Sub message of bot, use HTML parsemode format",
-        "value": "Hello {mention}\n\n<b>You Need To Join In My Channel To Use Me\n\nKindly Please Join Channel</b>",
+        "value": "𝐒𝐨𝐫𝐫𝐲 {first} 𝐲𝐨𝐮 𝐡𝐚𝐯𝐞 𝐭𝐨 𝐣𝐨𝐢𝐧 𝐦𝐲 𝐜𝐡𝐚𝐧𝐧𝐞𝐥𝐬 𝐟𝐢𝐫𝐬𝐭 𝐭𝐨 𝐚𝐜𝐜𝐞𝐬𝐬 𝐟𝐢𝐥𝐞𝐬...\n\n 𝐒𝐨 𝐩𝐥𝐞𝐚𝐬𝐞 𝐣𝐨𝐢𝐧 𝐦𝐲 𝐜𝐡𝐚𝐧𝐧𝐞𝐥𝐬 𝐟𝐢𝐫𝐬𝐭 𝐚𝐧𝐝 𝐜𝐥𝐢𝐜𝐤 𝐨𝐧 “𝐍𝐨𝐰 𝐂𝐥𝐢𝐜𝐤 𝐡𝐞𝐫𝐞” 𝐛𝐮𝐭𝐭𝐨𝐧...!",
         "required": false
       },
       "ADMINS": {
@@ -78,7 +78,7 @@
       },
       "SECONDS": {
         "description": "auto delete in seconds",
-        "value": "600",
+        "value": "900",
         "required": false
       }
   },
