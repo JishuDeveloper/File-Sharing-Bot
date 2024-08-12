@@ -89,15 +89,17 @@ async def start_command(client: Client, message: Message):
                 pass
 
 
-        k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>IMPORTANT</u> ❗️</b>\n\nThis Video / File Will Be Deleted In {file_auto_delete} (Due To Copyright Issues).\n\n📌 Please Forward This Video / File To Somewhere Else And Start Downloading There.")
-        await asyncio.sleep(FILE_AUTO_DELETE)
+        # k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>IMPORTANT</u> ❗️</b>\n\nThis Video / File Will Be Deleted In {file_auto_delete} (Due To Copyright Issues).\n\n📌 Please Forward This Video / File To Somewhere Else And Start Downloading There.")
+        await message.reply_text(f"Video / File Will Be Deleted After {file_auto_delete}. Please Forward Them Anywhere To Save Them.")
+        asyncio.create_task(delete_files(sent_messages, client))
+        # await asyncio.sleep(FILE_AUTO_DELETE)
         
-        for madflix_msg in madflix_msgs: 
-            try:
-                await madflix_msg.delete()
-                await k.edit_text("Your Video / File Is Successfully Deleted ✅") 
-            except:    
-                pass 
+        # for madflix_msg in madflix_msgs: 
+            # try:
+                # await madflix_msg.delete()
+                # await k.edit_text("Your Video / File Is Successfully Deleted ✅") 
+            # except:    
+                # pass 
 
         return
     else:
@@ -221,6 +223,16 @@ async def send_text(client: Bot, message: Message):
 
 
 
+
+# Function to handle file deletion
+async def delete_files(messages, client):
+    await asyncio.sleep(FILE_AUTO_DELETE)  # Wait for the duration specified in config.py
+    for msg in messages:
+        try:
+            await client.delete_messages(chat_id=msg.chat.id, message_ids=[msg.id])
+        except Exception as e:
+            print(f"The attempt to delete the media {msg.id} was unsuccessful: {e}")
+    await client.send_message(messages[0].chat.id, "Your Video / File Is Successfully Deleted ✅")
 
 
 
