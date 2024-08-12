@@ -1,20 +1,8 @@
-# Jishu Developer 
-# Don't Remove Credit 🥺
-# Telegram Channel @Madflix_Bots
-# Backup Channel @JishuBotz
-# Developer @JishuDeveloper
-
-
-
-
 import pymongo, os
 from config import DB_URL, DB_NAME
 
-
 dbclient = pymongo.MongoClient(DB_URL)
 database = dbclient[DB_NAME]
-
-
 user_data = database['users']
 
 
