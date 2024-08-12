@@ -1,5 +1,4 @@
-# pyrogram
-pyrofork==2.2.10
+pyrogram
 TgCrypto
 pyromod
 pymongo
