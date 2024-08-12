@@ -95,6 +95,7 @@ async def start_command(client: Client, message: Message):
         
         for msg in messages:
             try:
+                asyncio.create_task
                 await client.delete_messages(chat_id=msg.chat.id, message_ids=[msg.id])
             except Exception as e:
                 print(f"The attempt to delete the media {msg.id} was unsuccessful: {e}")
