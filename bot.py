@@ -12,9 +12,6 @@ pyrogram.utils.MIN_CHANNEL_ID = -1009999999999
 
 
 
-
-
-
 class Bot(Client):
     def __init__(self):
         super().__init__(
