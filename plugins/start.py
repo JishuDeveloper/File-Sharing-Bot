@@ -61,7 +61,7 @@ async def start_command(client: Client, message: Message):
             return
         await temp_msg.delete()
     
-        madflix_msgs = []
+        madflix_msgs = [] # List to keep track of sent messages
 
         for msg in messages:
 
@@ -90,6 +90,8 @@ async def start_command(client: Client, message: Message):
 
 
         k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>IMPORTANT</u> ❗️</b>\n\nThis Video / File Will Be Deleted In {file_auto_delete} (Due To Copyright Issues).\n\n📌 Please Forward This Video / File To Somewhere Else And Start Downloading There.")
+
+        # Schedule the file deletion
         asyncio.create_task(delete_files(madflix_msgs, client, k))
         
         # for madflix_msg in madflix_msgs: 
