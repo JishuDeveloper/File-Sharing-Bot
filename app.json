@@ -6,7 +6,7 @@
   "repository": "https://github.com/JishuDeveloper/File-Sharing-Premium-Bot",
   "success_url": "https://t.me/Madflix_Bots",
   "env": {
-      "APP_ID": {
+      "API_ID": {
           "description": "Your APP ID From my.telegram.org ",
           "value": "",
           "required": true
@@ -16,7 +16,7 @@
           "value": "",
           "required": true
       },
-      "TG_BOT_TOKEN": {
+      "BOT_TOKEN": {
           "description": "Your Bot Token From @BotFather",
           "value": "",
           "required": true
@@ -71,7 +71,7 @@
         "value": "False",
         "required": false
       },
-      "SECONDS": {
+      "FILE_AUTO_DELETE": {
         "description": "auto delete in seconds",
         "value": "600",
         "required": false
