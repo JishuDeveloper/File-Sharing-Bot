@@ -21,11 +21,6 @@
           "value": "",
           "required": true
       },
-      "OWNER": {
-          "description":"Add Your username here",
-          "value": "",
-          "required": true
-      },
       "OWNER_ID": {
         "description":"Add Your User ID here",
         "value": "",
@@ -38,22 +33,22 @@
       },
       "FORCE_SUB_CHANNEL": {
         "description": "id of the channel or group, if you want enable force sub feature else put 0",
-        "value": "",
+        "value": "0",
         "required": false
       },
       "FORCE_SUB_CHANNEL2": {
         "description": "id of the channel or group, if you want enable force sub feature else put 0",
-        "value": "",
+        "value": "0",
         "required": false
       },
       "FORCE_SUB_CHANNEL3": {
         "description": "id of the channel or group, if you want enable force sub feature else put 0",
-        "value": "",
+        "value": "0",
         "required": false
       },
       "FORCE_SUB_CHANNEL4": {
         "description": "id of the channel or group, if you want enable force sub feature else put 0",
-        "value": "",
+        "value": "0",
         "required": false
       },
       "DB_URL": {
@@ -86,7 +81,7 @@
         "value": "False",
         "required": false
       },
-      "SECONDS": {
+      "FILE_AUTO_DELETE": {
         "description": "auto delete in seconds",
         "value": "600",
         "required": false
