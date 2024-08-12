@@ -21,11 +21,6 @@
           "value": "",
           "required": true
       },
-      "OWNER": {
-          "description":"Add Your username here",
-          "value": "",
-          "required": true
-      },
       "OWNER_ID": {
         "description":"Add Your User ID here",
         "value": "",
